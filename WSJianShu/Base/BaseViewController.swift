@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 enum ToastType : NSInteger {
     case error     =   1
     case warning      =   2
@@ -15,9 +16,11 @@ enum ToastType : NSInteger {
 }
 
 class BaseViewController: UIViewController {
-
+    
     lazy var leftBarBtn : UIButton = {
-       return UIButton()
+        let btn = UIButton()
+        btn.addTarget(self, action: #selector(BaseViewController.goBack), for: .touchUpInside)
+        return btn
     }()
     
     lazy var rightBarBtn : UIButton = {
@@ -50,7 +53,7 @@ class BaseViewController: UIViewController {
     func setLeftBarBtn(image: UIImage, hlImage: UIImage, text: String) -> Void {
         navigationItem.leftBarButtonItem = setBtn(btn: leftBarBtn, image: image, hlImage: hlImage, text: text)
     }
-
+    
     func setLeftBarBtn(text: String) -> Void {
         navigationItem.leftBarButtonItem = setBtn(btn: leftBarBtn, image: nil, hlImage: nil, text: text)
     }
@@ -60,11 +63,12 @@ class BaseViewController: UIViewController {
     }
     
     func setLeftBackBarBtn() -> Void {
-        
+        let image = UIImage.init(named: "icon_tabbar_back")!
+        setLeftBarBtn(image: image, hlImage: UIImage.compressImage(image: image, size: image.size))
     }
     
     func goBack() -> Void {
-        
+       _ = navigationController?.popViewController(animated: true)
     }
     
     func requestSuccess() -> Void {
@@ -146,7 +150,7 @@ class BaseViewController: UIViewController {
         let item = UIBarButtonItem(customView: btn)
         return item
     }
-
+    
     // MARK: - override method
     
     override func viewDidLoad() {
@@ -154,13 +158,13 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
         setUpUI()
     }
-
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
     }
     
-
-
+    
+    
 }

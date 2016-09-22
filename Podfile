@@ -5,10 +5,11 @@ use_frameworks!
 
 target 'WSJianShu' do
 
-  pod 'Alamofire'
-  pod 'AlamofireImage'
-  pod 'AlamofireObjectMapper'
-  pod 'SnapKit', '~> 3.0'
-  pod 'ReachabilitySwift', '~> 3'
+#  pod 'Alamofire'
+#  pod 'AlamofireImage'
+#  pod 'AlamofireObjectMapper'
+#  pod 'SnapKit', '~> 3.0'
+#  pod 'ReachabilitySwift', '~> 3'
+#  pod 'MBProgressHUD', '~> 1.0.0'
 
 end

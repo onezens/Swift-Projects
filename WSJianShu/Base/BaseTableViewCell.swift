@@ -7,19 +7,32 @@
 //
 
 import UIKit
+//import SnapKit
 
 
 class BaseTableViewCell: UITableViewCell {
     
+//    func test() -> Void {
+//        contentView.addSubview(self)
+//    }
+    
     lazy var topSepLine : UIView = {
         let view = ViewUtils.getSepLine()
-        // TODO: set view frame with snapKit
+        self.contentView.addSubview(view)
+//        view.snp.makeConstraints({ (make) in
+//            make.top.left.right.equalTo(self.contentView)
+//            make.height.equalTo(0.5)
+//        })
         return view
     }()
     
     lazy var bottomSepLine : UIView = {
         let view = ViewUtils.getSepLine()
-        // TODO: set view frame with snapKit
+        self.contentView.addSubview(view)
+//        view.snp.makeConstraints({ (make) in
+//            make.bottom.left.right.equalTo(self.contentView)
+//            make.height.equalTo(0.5)
+//        })
         return view
     }()
     
