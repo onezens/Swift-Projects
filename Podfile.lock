@@ -1,3 +1,32 @@
-PODFILE CHECKSUM: e6bae1cf4226c312dae70d9049da1c844eb22e5d
+PODS:
+  - Alamofire (4.0.0)
+  - AlamofireImage (3.0.0):
+    - Alamofire (~> 4.0)
+  - AlamofireObjectMapper (4.0.0):
+    - Alamofire (~> 4.0)
+    - ObjectMapper (~> 2.0)
+  - MBProgressHUD (1.0.0)
+  - ObjectMapper (2.0.0)
+  - ReachabilitySwift (3)
+  - SnapKit (3.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - AlamofireObjectMapper
+  - MBProgressHUD (~> 1.0.0)
+  - ReachabilitySwift (~> 3)
+  - SnapKit (~> 3.0)
+
+SPEC CHECKSUMS:
+  Alamofire: fef59f00388f267e52d9b432aa5d93dc97190f14
+  AlamofireImage: 6594aa1139a67dcd36cde6da79ea4e5b318e60fb
+  AlamofireObjectMapper: 9faa3ce5a240efda1b209009a2d6e1e949227abc
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  ObjectMapper: aed2570edabbd3c9b26c939e1cabdb6558f933e0
+  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
+  SnapKit: f818b8326d45b4e1c777d0ab27b5c0a3624bfdeb
+
+PODFILE CHECKSUM: a9e45a0e40552062e4723fd14bedc11f0cacc67a
 
 COCOAPODS: 1.0.1
