@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3872350E31A2069051ECA85C /* Pods_WSJianShu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC85B4AF9EF3156FCBAF7C5 /* Pods_WSJianShu.framework */; };
+		D749CBD91D93773700FE9125 /* editor.html in Resources */ = {isa = PBXBuildFile; fileRef = D749CBD81D93773700FE9125 /* editor.html */; };
+		D749CBDB1D93776C00FE9125 /* getSelectionHtml.js in Resources */ = {isa = PBXBuildFile; fileRef = D749CBDA1D93776C00FE9125 /* getSelectionHtml.js */; };
+		D749CBDD1D93797700FE9125 /* tamarked.js in Resources */ = {isa = PBXBuildFile; fileRef = D749CBDC1D93797700FE9125 /* tamarked.js */; };
+		D749CBDF1D93799C00FE9125 /* Theme-Light.plist in Resources */ = {isa = PBXBuildFile; fileRef = D749CBDE1D93799C00FE9125 /* Theme-Light.plist */; };
+		D749CBE11D9379B900FE9125 /* Theme-Night.plist in Resources */ = {isa = PBXBuildFile; fileRef = D749CBE01D9379B900FE9125 /* Theme-Night.plist */; };
+		D749CBE31D9379F500FE9125 /* ZSSRichTextEditor.js in Resources */ = {isa = PBXBuildFile; fileRef = D749CBE21D9379F500FE9125 /* ZSSRichTextEditor.js */; };
+		D749CBE51D937A5600FE9125 /* HGEmoji.plist in Resources */ = {isa = PBXBuildFile; fileRef = D749CBE41D937A5600FE9125 /* HGEmoji.plist */; };
 		D775BE851D92653E00EA6530 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D775BE721D92653E00EA6530 /* AppDelegate.swift */; };
 		D775BE861D92653E00EA6530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D775BE731D92653E00EA6530 /* LaunchScreen.storyboard */; };
 		D775BE871D92653E00EA6530 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D775BE751D92653E00EA6530 /* Main.storyboard */; };
@@ -27,6 +34,13 @@
 /* Begin PBXFileReference section */
 		63117DF8B3068679EFBCAEE7 /* Pods-WSJianShu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSJianShu.release.xcconfig"; path = "Pods/Target Support Files/Pods-WSJianShu/Pods-WSJianShu.release.xcconfig"; sourceTree = "<group>"; };
 		CFC85B4AF9EF3156FCBAF7C5 /* Pods_WSJianShu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WSJianShu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D749CBD81D93773700FE9125 /* editor.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = editor.html; sourceTree = "<group>"; };
+		D749CBDA1D93776C00FE9125 /* getSelectionHtml.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = getSelectionHtml.js; sourceTree = "<group>"; };
+		D749CBDC1D93797700FE9125 /* tamarked.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tamarked.js; sourceTree = "<group>"; };
+		D749CBDE1D93799C00FE9125 /* Theme-Light.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Theme-Light.plist"; sourceTree = "<group>"; };
+		D749CBE01D9379B900FE9125 /* Theme-Night.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Theme-Night.plist"; sourceTree = "<group>"; };
+		D749CBE21D9379F500FE9125 /* ZSSRichTextEditor.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ZSSRichTextEditor.js; sourceTree = "<group>"; };
+		D749CBE41D937A5600FE9125 /* HGEmoji.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = HGEmoji.plist; sourceTree = "<group>"; };
 		D775BE3E1D925E2200EA6530 /* WSJianShu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WSJianShu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D775BE4D1D925E2200EA6530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D775BE721D92653E00EA6530 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,11 +126,11 @@
 		D775BE701D92653E00EA6530 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				D775BE8A1D927A2800EA6530 /* BaseTableViewCell.swift */,
-				D775BE8C1D927A3400EA6530 /* BaseViewController.swift */,
 				D775BE8E1D927B1D00EA6530 /* BaseModel.swift */,
 				D775BE901D927B3300EA6530 /* BaseService.swift */,
 				D775BE921D927B5E00EA6530 /* BaseWebView.swift */,
+				D775BE8A1D927A2800EA6530 /* BaseTableViewCell.swift */,
+				D775BE8C1D927A3400EA6530 /* BaseViewController.swift */,
 				D775BE941D927B8700EA6530 /* BaseWebViewController.swift */,
 			);
 			path = Base;
@@ -151,6 +165,13 @@
 		D775BE7A1D92653E00EA6530 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D749CBE41D937A5600FE9125 /* HGEmoji.plist */,
+				D749CBE21D9379F500FE9125 /* ZSSRichTextEditor.js */,
+				D749CBE01D9379B900FE9125 /* Theme-Night.plist */,
+				D749CBDE1D93799C00FE9125 /* Theme-Light.plist */,
+				D749CBDC1D93797700FE9125 /* tamarked.js */,
+				D749CBDA1D93776C00FE9125 /* getSelectionHtml.js */,
+				D749CBD81D93773700FE9125 /* editor.html */,
 				D775BE7B1D92653E00EA6530 /* Assets.xcassets */,
 			);
 			path = Source;
@@ -300,9 +321,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D749CBE31D9379F500FE9125 /* ZSSRichTextEditor.js in Resources */,
 				D775BE861D92653E00EA6530 /* LaunchScreen.storyboard in Resources */,
+				D749CBDD1D93797700FE9125 /* tamarked.js in Resources */,
+				D749CBD91D93773700FE9125 /* editor.html in Resources */,
+				D749CBDB1D93776C00FE9125 /* getSelectionHtml.js in Resources */,
 				D775BE891D92653E00EA6530 /* Assets.xcassets in Resources */,
+				D749CBE11D9379B900FE9125 /* Theme-Night.plist in Resources */,
 				D775BE871D92653E00EA6530 /* Main.storyboard in Resources */,
+				D749CBE51D937A5600FE9125 /* HGEmoji.plist in Resources */,
+				D749CBDF1D93799C00FE9125 /* Theme-Light.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +521,7 @@
 			baseConfigurationReference = E75E147D677189C8A578ED0D /* Pods-WSJianShu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = J4N8RS9Y8V;
 				INFOPLIST_FILE = WSJianShu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -508,6 +537,7 @@
 			baseConfigurationReference = 63117DF8B3068679EFBCAEE7 /* Pods-WSJianShu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = J4N8RS9Y8V;
 				INFOPLIST_FILE = WSJianShu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

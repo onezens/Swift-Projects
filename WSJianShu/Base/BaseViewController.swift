@@ -9,9 +9,9 @@
 import UIKit
 
 enum ToastType : NSInteger {
-    case ToastError     =   1
-    case ToastWarn      =   2
-    case ToastSuccess   =   3
+    case error     =   1
+    case warning      =   2
+    case success   =   3
 }
 
 class BaseViewController: UIViewController {
@@ -40,30 +40,26 @@ class BaseViewController: UIViewController {
     }
     
     func setLeftBarBtn(image: UIImage, hlImage: UIImage) {
-        
+        navigationItem.leftBarButtonItem  = setBtn(btn: leftBarBtn, image: image, hlImage: hlImage, text: nil)
     }
     
     func setRightBarBtn(image: UIImage, hlImage: UIImage) -> Void {
-        
-    }
-    
-    func setRightSecBarBtn(image: UIImage, hlImage: UIImage) -> Void {
-        
+        navigationItem.rightBarButtonItem = setBtn(btn: rightBarBtn, image: image, hlImage: hlImage, text: nil)
     }
     
     func setLeftBarBtn(image: UIImage, hlImage: UIImage, text: String) -> Void {
-        
+        navigationItem.leftBarButtonItem = setBtn(btn: leftBarBtn, image: image, hlImage: hlImage, text: text)
     }
-    
-    func setLeftBackBarBtn() -> Void {
-        
-    }
-    
+
     func setLeftBarBtn(text: String) -> Void {
-        
+        navigationItem.leftBarButtonItem = setBtn(btn: leftBarBtn, image: nil, hlImage: nil, text: text)
     }
     
     func setRightBarBtn(text: String) -> Void {
+        navigationItem.rightBarButtonItem = setBtn(btn: rightBarBtn, image: nil, hlImage: nil, text: text)
+    }
+    
+    func setLeftBackBarBtn() -> Void {
         
     }
     
@@ -139,6 +135,17 @@ class BaseViewController: UIViewController {
     
     // MARK: - private method
     
+    
+    private func setBtn(btn: UIButton, image: UIImage?, hlImage: UIImage?, text: String?) -> UIBarButtonItem {
+        btn.setImage(image, for: .normal)
+        btn.setImage(hlImage, for: .highlighted)
+        btn.setTitle(text, for: .normal)
+        btn.setTitleColor(UIColor.getNavBarTintColor(), for: .normal)
+        btn.setTitleColor(UIColor.getNavBarHLTintColor(), for: .highlighted)
+        btn.sizeToFit()
+        let item = UIBarButtonItem(customView: btn)
+        return item
+    }
 
     // MARK: - override method
     

@@ -16,6 +16,16 @@ extension UIColor {
         return UIColor.colorWithHex(hex: 0x8e8e8e)
     }
     
+    class func getNavBarTintColor() -> UIColor {
+        
+        return UIColor.colorWithHex(hex: 0xffffff)
+    }
+    
+    class func getNavBarHLTintColor() -> UIColor {
+        
+        return UIColor.colorWithHex(hex: 0xffffff)
+    }
+    
     class func colorWithHex(hex: NSInteger) -> UIColor {
         
         return UIColor(netHex: hex)
