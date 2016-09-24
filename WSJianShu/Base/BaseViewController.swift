@@ -7,35 +7,60 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 
 enum ToastType : NSInteger {
     case error     =   1
-    case warning      =   2
+    case warning   =   2
     case success   =   3
 }
 
 class BaseViewController: UIViewController {
     
-    lazy var leftBarBtn : UIButton = {
-        let btn = UIButton()
+//    var showLoadingView: UIView?
+    
+    lazy var leftBarBtn : BaseNavButton = {
+        let btn = BaseNavButton.navButton()
         btn.addTarget(self, action: #selector(BaseViewController.goBack), for: .touchUpInside)
         return btn
     }()
     
-    lazy var rightBarBtn : UIButton = {
-        return UIButton()
+    lazy var rightBarBtn : BaseNavButton = {
+        return BaseNavButton.navButton(type: .right)
     }()
     
-    lazy var rightSecBarBtn : UIButton = {
-        return UIButton ()
+    lazy var rightSecBarBtn : BaseNavButton = {
+        return BaseNavButton.navButton(type: .secRight)
     }()
     
+    // MARK: - override method
     
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        setUpUI()
+    }
+    
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        
+    }
+    
+}
+
+extension BaseViewController : UIGestureRecognizerDelegate {
     
     // MARK: - public method
     func setUpUI() -> Void {
-        
+        navigationController?.interactivePopGestureRecognizer?.delegate = self
+        view.backgroundColor = UIColor.white
+        if navigationController != nil {
+            if navigationController!.viewControllers.count > 1 {
+                setLeftBackBarBtn()
+            }
+        }
     }
     
     func checkLogin() -> Bool {
@@ -44,6 +69,7 @@ class BaseViewController: UIViewController {
     
     func setLeftBarBtn(image: UIImage, hlImage: UIImage) {
         navigationItem.leftBarButtonItem  = setBtn(btn: leftBarBtn, image: image, hlImage: hlImage, text: nil)
+        
     }
     
     func setRightBarBtn(image: UIImage, hlImage: UIImage) -> Void {
@@ -56,19 +82,22 @@ class BaseViewController: UIViewController {
     
     func setLeftBarBtn(text: String) -> Void {
         navigationItem.leftBarButtonItem = setBtn(btn: leftBarBtn, image: nil, hlImage: nil, text: text)
+        
     }
     
     func setRightBarBtn(text: String) -> Void {
         navigationItem.rightBarButtonItem = setBtn(btn: rightBarBtn, image: nil, hlImage: nil, text: text)
+        
     }
     
     func setLeftBackBarBtn() -> Void {
         let image = UIImage.init(named: "icon_tabbar_back")!
-        setLeftBarBtn(image: image, hlImage: UIImage.compressImage(image: image, size: image.size))
+        setLeftBarBtn(image: image, hlImage: UIImage.renderImage(image: image, size: image.size, renderColor: UIColor.getNavBarHLTintColor()))
+        //        setLeftBarBtn(image: image, hlImage: UIImage.renderImage(image: image, size: image.size, renderColor: UIColor.getNavBarHLTintColor()), text: "back")
     }
     
     func goBack() -> Void {
-       _ = navigationController?.popViewController(animated: true)
+        _ = navigationController?.popViewController(animated: true)
     }
     
     func requestSuccess() -> Void {
@@ -81,10 +110,11 @@ class BaseViewController: UIViewController {
     
     func showLoadingView() -> Void {
         
+        MBProgressHUD.showAdded(to: self.view, animated: true)
     }
     
     func dismissLoadingView() -> Void {
-        
+        MBProgressHUD.hide(for: self.view, animated: true)
     }
     
     func showEmptyLoadingView() -> Void {
@@ -136,11 +166,9 @@ class BaseViewController: UIViewController {
         
     }
     
-    
     // MARK: - private method
     
-    
-    private func setBtn(btn: UIButton, image: UIImage?, hlImage: UIImage?, text: String?) -> UIBarButtonItem {
+    private func setBtn(btn: BaseNavButton, image: UIImage?, hlImage: UIImage?, text: String?) -> UIBarButtonItem {
         btn.setImage(image, for: .normal)
         btn.setImage(hlImage, for: .highlighted)
         btn.setTitle(text, for: .normal)
@@ -150,21 +178,20 @@ class BaseViewController: UIViewController {
         let item = UIBarButtonItem(customView: btn)
         return item
     }
-    
-    // MARK: - override method
-    
-    override func viewDidLoad() {
+
+
+}
+
+/// Delegate
+extension BaseViewController {
+
+    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
         
-        super.viewDidLoad()
-        setUpUI()
+        if let nav = navigationController {
+            if nav.viewControllers.count > 1 {
+                return true
+            }
+        }
+        return false
     }
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
-    }
-    
-    
-    
 }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3872350E31A2069051ECA85C /* Pods_WSJianShu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC85B4AF9EF3156FCBAF7C5 /* Pods_WSJianShu.framework */; };
 		D7252E491D93ACD2009AEA8C /* UIImage+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7252E481D93ACD2009AEA8C /* UIImage+Common.swift */; };
+		D73119FD1D93ED4700AE6C99 /* WSImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D73119FC1D93ED4700AE6C99 /* WSImage.m */; };
 		D749CBD91D93773700FE9125 /* editor.html in Resources */ = {isa = PBXBuildFile; fileRef = D749CBD81D93773700FE9125 /* editor.html */; };
 		D749CBDB1D93776C00FE9125 /* getSelectionHtml.js in Resources */ = {isa = PBXBuildFile; fileRef = D749CBDA1D93776C00FE9125 /* getSelectionHtml.js */; };
 		D749CBDD1D93797700FE9125 /* tamarked.js in Resources */ = {isa = PBXBuildFile; fileRef = D749CBDC1D93797700FE9125 /* tamarked.js */; };
@@ -16,6 +17,8 @@
 		D749CBE11D9379B900FE9125 /* Theme-Night.plist in Resources */ = {isa = PBXBuildFile; fileRef = D749CBE01D9379B900FE9125 /* Theme-Night.plist */; };
 		D749CBE31D9379F500FE9125 /* ZSSRichTextEditor.js in Resources */ = {isa = PBXBuildFile; fileRef = D749CBE21D9379F500FE9125 /* ZSSRichTextEditor.js */; };
 		D749CBE51D937A5600FE9125 /* HGEmoji.plist in Resources */ = {isa = PBXBuildFile; fileRef = D749CBE41D937A5600FE9125 /* HGEmoji.plist */; };
+		D75CD1491D951D2B005EA2A2 /* BaseNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75CD1481D951D2B005EA2A2 /* BaseNavigationBar.swift */; };
+		D75CD14B1D951D5B005EA2A2 /* BaseNavButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75CD14A1D951D5B005EA2A2 /* BaseNavButton.swift */; };
 		D775BE851D92653E00EA6530 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D775BE721D92653E00EA6530 /* AppDelegate.swift */; };
 		D775BE861D92653E00EA6530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D775BE731D92653E00EA6530 /* LaunchScreen.storyboard */; };
 		D775BE871D92653E00EA6530 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D775BE751D92653E00EA6530 /* Main.storyboard */; };
@@ -36,6 +39,9 @@
 		63117DF8B3068679EFBCAEE7 /* Pods-WSJianShu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSJianShu.release.xcconfig"; path = "Pods/Target Support Files/Pods-WSJianShu/Pods-WSJianShu.release.xcconfig"; sourceTree = "<group>"; };
 		CFC85B4AF9EF3156FCBAF7C5 /* Pods_WSJianShu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WSJianShu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7252E481D93ACD2009AEA8C /* UIImage+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Common.swift"; sourceTree = "<group>"; };
+		D73119FA1D93EC4F00AE6C99 /* WSJianShu-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WSJianShu-Bridge-Header.h"; sourceTree = "<group>"; };
+		D73119FB1D93ED4700AE6C99 /* WSImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSImage.h; sourceTree = "<group>"; };
+		D73119FC1D93ED4700AE6C99 /* WSImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSImage.m; sourceTree = "<group>"; };
 		D749CBD81D93773700FE9125 /* editor.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = editor.html; sourceTree = "<group>"; };
 		D749CBDA1D93776C00FE9125 /* getSelectionHtml.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = getSelectionHtml.js; sourceTree = "<group>"; };
 		D749CBDC1D93797700FE9125 /* tamarked.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tamarked.js; sourceTree = "<group>"; };
@@ -43,6 +49,8 @@
 		D749CBE01D9379B900FE9125 /* Theme-Night.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Theme-Night.plist"; sourceTree = "<group>"; };
 		D749CBE21D9379F500FE9125 /* ZSSRichTextEditor.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ZSSRichTextEditor.js; sourceTree = "<group>"; };
 		D749CBE41D937A5600FE9125 /* HGEmoji.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = HGEmoji.plist; sourceTree = "<group>"; };
+		D75CD1481D951D2B005EA2A2 /* BaseNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationBar.swift; sourceTree = "<group>"; };
+		D75CD14A1D951D5B005EA2A2 /* BaseNavButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavButton.swift; sourceTree = "<group>"; };
 		D775BE3E1D925E2200EA6530 /* WSJianShu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WSJianShu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D775BE4D1D925E2200EA6530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D775BE721D92653E00EA6530 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +142,8 @@
 				D775BE8A1D927A2800EA6530 /* BaseTableViewCell.swift */,
 				D775BE8C1D927A3400EA6530 /* BaseViewController.swift */,
 				D775BE941D927B8700EA6530 /* BaseWebViewController.swift */,
+				D75CD1481D951D2B005EA2A2 /* BaseNavigationBar.swift */,
+				D75CD14A1D951D5B005EA2A2 /* BaseNavButton.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -146,6 +156,9 @@
 				D775BE751D92653E00EA6530 /* Main.storyboard */,
 				D775BE771D92653E00EA6530 /* ViewController.swift */,
 				D775BE961D927BF800EA6530 /* GlobalManager.swift */,
+				D73119FA1D93EC4F00AE6C99 /* WSJianShu-Bridge-Header.h */,
+				D73119FB1D93ED4700AE6C99 /* WSImage.h */,
+				D73119FC1D93ED4700AE6C99 /* WSImage.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -398,12 +411,15 @@
 				D775BE8D1D927A3400EA6530 /* BaseViewController.swift in Sources */,
 				D775BE911D927B3300EA6530 /* BaseService.swift in Sources */,
 				D775BE8B1D927A2800EA6530 /* BaseTableViewCell.swift in Sources */,
+				D75CD1491D951D2B005EA2A2 /* BaseNavigationBar.swift in Sources */,
 				D775BE851D92653E00EA6530 /* AppDelegate.swift in Sources */,
 				D775BE8F1D927B1D00EA6530 /* BaseModel.swift in Sources */,
 				D775BE9A1D927DDB00EA6530 /* ViewUtils.swift in Sources */,
 				D775BE951D927B8700EA6530 /* BaseWebViewController.swift in Sources */,
 				D775BE971D927BF800EA6530 /* GlobalManager.swift in Sources */,
+				D75CD14B1D951D5B005EA2A2 /* BaseNavButton.swift in Sources */,
 				D775BE931D927B5E00EA6530 /* BaseWebView.swift in Sources */,
+				D73119FD1D93ED4700AE6C99 /* WSImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,7 +548,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.wackosix.WSJianShu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "WSJianShu/Main/WSJianShu-Bridge-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -549,7 +565,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.wackosix.WSJianShu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "WSJianShu/Main/WSJianShu-Bridge-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
