@@ -33,6 +33,13 @@
 		D775BE971D927BF800EA6530 /* GlobalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D775BE961D927BF800EA6530 /* GlobalManager.swift */; };
 		D775BE9A1D927DDB00EA6530 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D775BE991D927DDB00EA6530 /* ViewUtils.swift */; };
 		D775BE9E1D927EEE00EA6530 /* UIColor+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = D775BE9D1D927EEE00EA6530 /* UIColor+Common.swift */; };
+		D7798C351D966664000C7BEE /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7798C341D966664000C7BEE /* MainTabBarController.swift */; };
+		D7798C371D966756000C7BEE /* WSDiscoveryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7798C361D966756000C7BEE /* WSDiscoveryController.swift */; };
+		D7798C391D966805000C7BEE /* WSFollowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7798C381D966805000C7BEE /* WSFollowController.swift */; };
+		D7798C3B1D966818000C7BEE /* WSLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7798C3A1D966818000C7BEE /* WSLoginController.swift */; };
+		D7798C3D1D96682F000C7BEE /* WSMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7798C3C1D96682F000C7BEE /* WSMessageController.swift */; };
+		D7798C3F1D966848000C7BEE /* WSProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7798C3E1D966848000C7BEE /* WSProfileController.swift */; };
+		D7798C411D967811000C7BEE /* UIFont+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7798C401D967811000C7BEE /* UIFont+Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +74,13 @@
 		D775BE961D927BF800EA6530 /* GlobalManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalManager.swift; sourceTree = "<group>"; };
 		D775BE991D927DDB00EA6530 /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
 		D775BE9D1D927EEE00EA6530 /* UIColor+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Common.swift"; sourceTree = "<group>"; };
+		D7798C341D966664000C7BEE /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		D7798C361D966756000C7BEE /* WSDiscoveryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSDiscoveryController.swift; sourceTree = "<group>"; };
+		D7798C381D966805000C7BEE /* WSFollowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSFollowController.swift; sourceTree = "<group>"; };
+		D7798C3A1D966818000C7BEE /* WSLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSLoginController.swift; sourceTree = "<group>"; };
+		D7798C3C1D96682F000C7BEE /* WSMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSMessageController.swift; sourceTree = "<group>"; };
+		D7798C3E1D966848000C7BEE /* WSProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSProfileController.swift; sourceTree = "<group>"; };
+		D7798C401D967811000C7BEE /* UIFont+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Common.swift"; sourceTree = "<group>"; };
 		E75E147D677189C8A578ED0D /* Pods-WSJianShu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSJianShu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WSJianShu/Pods-WSJianShu.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,6 +165,7 @@
 		D775BE711D92653E00EA6530 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				D7798C341D966664000C7BEE /* MainTabBarController.swift */,
 				D775BE721D92653E00EA6530 /* AppDelegate.swift */,
 				D775BE731D92653E00EA6530 /* LaunchScreen.storyboard */,
 				D775BE751D92653E00EA6530 /* Main.storyboard */,
@@ -203,7 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				D775BE7E1D92653E00EA6530 /* Discovery */,
-				D775BE7F1D92653E00EA6530 /* Follwer */,
+				D775BE7F1D92653E00EA6530 /* Follw */,
 				D775BE801D92653E00EA6530 /* Login */,
 				D775BE811D92653E00EA6530 /* Message */,
 				D775BE821D92653E00EA6530 /* Profile */,
@@ -214,20 +229,24 @@
 		D775BE7E1D92653E00EA6530 /* Discovery */ = {
 			isa = PBXGroup;
 			children = (
+				D7798C361D966756000C7BEE /* WSDiscoveryController.swift */,
 			);
 			path = Discovery;
 			sourceTree = "<group>";
 		};
-		D775BE7F1D92653E00EA6530 /* Follwer */ = {
+		D775BE7F1D92653E00EA6530 /* Follw */ = {
 			isa = PBXGroup;
 			children = (
+				D7798C381D966805000C7BEE /* WSFollowController.swift */,
 			);
+			name = Follw;
 			path = Follwer;
 			sourceTree = "<group>";
 		};
 		D775BE801D92653E00EA6530 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				D7798C3A1D966818000C7BEE /* WSLoginController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -235,6 +254,7 @@
 		D775BE811D92653E00EA6530 /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				D7798C3C1D96682F000C7BEE /* WSMessageController.swift */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -242,6 +262,7 @@
 		D775BE821D92653E00EA6530 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				D7798C3E1D966848000C7BEE /* WSProfileController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -260,6 +281,7 @@
 			children = (
 				D775BE9D1D927EEE00EA6530 /* UIColor+Common.swift */,
 				D7252E481D93ACD2009AEA8C /* UIImage+Common.swift */,
+				D7798C401D967811000C7BEE /* UIFont+Common.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -406,15 +428,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7252E491D93ACD2009AEA8C /* UIImage+Common.swift in Sources */,
+				D7798C3B1D966818000C7BEE /* WSLoginController.swift in Sources */,
 				D775BE9E1D927EEE00EA6530 /* UIColor+Common.swift in Sources */,
+				D7798C3D1D96682F000C7BEE /* WSMessageController.swift in Sources */,
 				D775BE881D92653E00EA6530 /* ViewController.swift in Sources */,
+				D7798C371D966756000C7BEE /* WSDiscoveryController.swift in Sources */,
 				D775BE8D1D927A3400EA6530 /* BaseViewController.swift in Sources */,
 				D775BE911D927B3300EA6530 /* BaseService.swift in Sources */,
+				D7798C3F1D966848000C7BEE /* WSProfileController.swift in Sources */,
 				D775BE8B1D927A2800EA6530 /* BaseTableViewCell.swift in Sources */,
 				D75CD1491D951D2B005EA2A2 /* BaseNavigationBar.swift in Sources */,
+				D7798C391D966805000C7BEE /* WSFollowController.swift in Sources */,
 				D775BE851D92653E00EA6530 /* AppDelegate.swift in Sources */,
 				D775BE8F1D927B1D00EA6530 /* BaseModel.swift in Sources */,
 				D775BE9A1D927DDB00EA6530 /* ViewUtils.swift in Sources */,
+				D7798C411D967811000C7BEE /* UIFont+Common.swift in Sources */,
+				D7798C351D966664000C7BEE /* MainTabBarController.swift in Sources */,
 				D775BE951D927B8700EA6530 /* BaseWebViewController.swift in Sources */,
 				D775BE971D927BF800EA6530 /* GlobalManager.swift in Sources */,
 				D75CD14B1D951D5B005EA2A2 /* BaseNavButton.swift in Sources */,

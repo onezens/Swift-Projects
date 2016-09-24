@@ -1,16 +1,51 @@
 {
   "images" : [
     {
+      "resizing" : {
+        "mode" : "3-part-vertical",
+        "center" : {
+          "mode" : "tile",
+          "height" : 1
+        },
+        "cap-insets" : {
+          "top" : 12,
+          "bottom" : 12
+        }
+      },
       "idiom" : "universal",
-      "filename" : "bg_tabbar.pdf",
+      "filename" : "bg_tabbar_25x25_@1x.png",
       "scale" : "1x"
     },
     {
+      "resizing" : {
+        "mode" : "3-part-vertical",
+        "center" : {
+          "mode" : "tile",
+          "height" : 1
+        },
+        "cap-insets" : {
+          "top" : 24,
+          "bottom" : 25
+        }
+      },
       "idiom" : "universal",
+      "filename" : "bg_tabbar_25x25_@2x.png",
       "scale" : "2x"
     },
     {
+      "resizing" : {
+        "mode" : "3-part-vertical",
+        "center" : {
+          "mode" : "tile",
+          "height" : 1
+        },
+        "cap-insets" : {
+          "top" : 37,
+          "bottom" : 37
+        }
+      },
       "idiom" : "universal",
+      "filename" : "bg_tabbar_25x25_@3x.png",
       "scale" : "3x"
     }
   ],

@@ -8,6 +8,7 @@
 
 import UIKit
 import MBProgressHUD
+import AlamofireImage
 
 
 enum ToastType : NSInteger {

@@ -18,13 +18,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        jianShuVC()
+        basicSetUp()
+        return true
+    }
+    
+    private func jianShuVC() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let vc = MainTabBarController()
+        window?.rootViewController = vc
+        window?.makeKeyAndVisible()
+        
+    }
+    
+    private func testVC() {
+        
         window = UIWindow(frame: UIScreen.main.bounds)
         let vc = ViewController()
         let nav = UINavigationController(rootViewController: vc)
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
-        basicSetUp()
-        return true
     }
 
 }
