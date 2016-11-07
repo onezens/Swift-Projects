@@ -9,8 +9,6 @@
 #ifndef WSJianShu_Bridge_Header_h
 #define WSJianShu_Bridge_Header_h
 
-//#import "MBProgressHUD.h"
 
-#import "WSImage.h"
 
 #endif /* WSJianShu_Bridge_Header_h */

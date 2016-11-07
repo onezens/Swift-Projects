@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3872350E31A2069051ECA85C /* Pods_WSJianShu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC85B4AF9EF3156FCBAF7C5 /* Pods_WSJianShu.framework */; };
-		D7252E491D93ACD2009AEA8C /* UIImage+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7252E481D93ACD2009AEA8C /* UIImage+Common.swift */; };
-		D73119FD1D93ED4700AE6C99 /* WSImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D73119FC1D93ED4700AE6C99 /* WSImage.m */; };
 		D749CBD91D93773700FE9125 /* editor.html in Resources */ = {isa = PBXBuildFile; fileRef = D749CBD81D93773700FE9125 /* editor.html */; };
 		D749CBDB1D93776C00FE9125 /* getSelectionHtml.js in Resources */ = {isa = PBXBuildFile; fileRef = D749CBDA1D93776C00FE9125 /* getSelectionHtml.js */; };
 		D749CBDD1D93797700FE9125 /* tamarked.js in Resources */ = {isa = PBXBuildFile; fileRef = D749CBDC1D93797700FE9125 /* tamarked.js */; };
@@ -32,23 +30,21 @@
 		D775BE951D927B8700EA6530 /* BaseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D775BE941D927B8700EA6530 /* BaseWebViewController.swift */; };
 		D775BE971D927BF800EA6530 /* GlobalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D775BE961D927BF800EA6530 /* GlobalManager.swift */; };
 		D775BE9A1D927DDB00EA6530 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D775BE991D927DDB00EA6530 /* ViewUtils.swift */; };
-		D775BE9E1D927EEE00EA6530 /* UIColor+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = D775BE9D1D927EEE00EA6530 /* UIColor+Common.swift */; };
 		D7798C351D966664000C7BEE /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7798C341D966664000C7BEE /* MainTabBarController.swift */; };
 		D7798C371D966756000C7BEE /* WSDiscoveryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7798C361D966756000C7BEE /* WSDiscoveryController.swift */; };
 		D7798C391D966805000C7BEE /* WSFollowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7798C381D966805000C7BEE /* WSFollowController.swift */; };
 		D7798C3B1D966818000C7BEE /* WSLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7798C3A1D966818000C7BEE /* WSLoginController.swift */; };
 		D7798C3D1D96682F000C7BEE /* WSMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7798C3C1D96682F000C7BEE /* WSMessageController.swift */; };
 		D7798C3F1D966848000C7BEE /* WSProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7798C3E1D966848000C7BEE /* WSProfileController.swift */; };
-		D7798C411D967811000C7BEE /* UIFont+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7798C401D967811000C7BEE /* UIFont+Common.swift */; };
+		D795DC921DD066E3002CCFBA /* UIColor+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = D795DC8F1DD066E3002CCFBA /* UIColor+Common.swift */; };
+		D795DC931DD066E3002CCFBA /* UIFont+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = D795DC901DD066E3002CCFBA /* UIFont+Common.swift */; };
+		D795DC941DD066E3002CCFBA /* UIImage+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = D795DC911DD066E3002CCFBA /* UIImage+Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		63117DF8B3068679EFBCAEE7 /* Pods-WSJianShu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSJianShu.release.xcconfig"; path = "Pods/Target Support Files/Pods-WSJianShu/Pods-WSJianShu.release.xcconfig"; sourceTree = "<group>"; };
 		CFC85B4AF9EF3156FCBAF7C5 /* Pods_WSJianShu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WSJianShu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7252E481D93ACD2009AEA8C /* UIImage+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Common.swift"; sourceTree = "<group>"; };
 		D73119FA1D93EC4F00AE6C99 /* WSJianShu-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WSJianShu-Bridge-Header.h"; sourceTree = "<group>"; };
-		D73119FB1D93ED4700AE6C99 /* WSImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSImage.h; sourceTree = "<group>"; };
-		D73119FC1D93ED4700AE6C99 /* WSImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSImage.m; sourceTree = "<group>"; };
 		D749CBD81D93773700FE9125 /* editor.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = editor.html; sourceTree = "<group>"; };
 		D749CBDA1D93776C00FE9125 /* getSelectionHtml.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = getSelectionHtml.js; sourceTree = "<group>"; };
 		D749CBDC1D93797700FE9125 /* tamarked.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tamarked.js; sourceTree = "<group>"; };
@@ -73,14 +69,15 @@
 		D775BE941D927B8700EA6530 /* BaseWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWebViewController.swift; sourceTree = "<group>"; };
 		D775BE961D927BF800EA6530 /* GlobalManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalManager.swift; sourceTree = "<group>"; };
 		D775BE991D927DDB00EA6530 /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
-		D775BE9D1D927EEE00EA6530 /* UIColor+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Common.swift"; sourceTree = "<group>"; };
 		D7798C341D966664000C7BEE /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		D7798C361D966756000C7BEE /* WSDiscoveryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSDiscoveryController.swift; sourceTree = "<group>"; };
 		D7798C381D966805000C7BEE /* WSFollowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSFollowController.swift; sourceTree = "<group>"; };
 		D7798C3A1D966818000C7BEE /* WSLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSLoginController.swift; sourceTree = "<group>"; };
 		D7798C3C1D96682F000C7BEE /* WSMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSMessageController.swift; sourceTree = "<group>"; };
 		D7798C3E1D966848000C7BEE /* WSProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSProfileController.swift; sourceTree = "<group>"; };
-		D7798C401D967811000C7BEE /* UIFont+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Common.swift"; sourceTree = "<group>"; };
+		D795DC8F1DD066E3002CCFBA /* UIColor+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Common.swift"; sourceTree = "<group>"; };
+		D795DC901DD066E3002CCFBA /* UIFont+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Common.swift"; sourceTree = "<group>"; };
+		D795DC911DD066E3002CCFBA /* UIImage+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Common.swift"; sourceTree = "<group>"; };
 		E75E147D677189C8A578ED0D /* Pods-WSJianShu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSJianShu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WSJianShu/Pods-WSJianShu.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,7 +156,8 @@
 				D75CD1481D951D2B005EA2A2 /* BaseNavigationBar.swift */,
 				D75CD14A1D951D5B005EA2A2 /* BaseNavButton.swift */,
 			);
-			path = Base;
+			name = Base;
+			path = ../../../Architecture/Base;
 			sourceTree = "<group>";
 		};
 		D775BE711D92653E00EA6530 /* Main */ = {
@@ -172,8 +170,6 @@
 				D775BE771D92653E00EA6530 /* ViewController.swift */,
 				D775BE961D927BF800EA6530 /* GlobalManager.swift */,
 				D73119FA1D93EC4F00AE6C99 /* WSJianShu-Bridge-Header.h */,
-				D73119FB1D93ED4700AE6C99 /* WSImage.h */,
-				D73119FC1D93ED4700AE6C99 /* WSImage.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -271,24 +267,16 @@
 			isa = PBXGroup;
 			children = (
 				D775BE981D927CE400EA6530 /* Common */,
-				D775BE841D92653E00EA6530 /* Category */,
 			);
 			path = Utility;
-			sourceTree = "<group>";
-		};
-		D775BE841D92653E00EA6530 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				D775BE9D1D927EEE00EA6530 /* UIColor+Common.swift */,
-				D7252E481D93ACD2009AEA8C /* UIImage+Common.swift */,
-				D7798C401D967811000C7BEE /* UIFont+Common.swift */,
-			);
-			path = Category;
 			sourceTree = "<group>";
 		};
 		D775BE981D927CE400EA6530 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				D795DC8F1DD066E3002CCFBA /* UIColor+Common.swift */,
+				D795DC901DD066E3002CCFBA /* UIFont+Common.swift */,
+				D795DC911DD066E3002CCFBA /* UIImage+Common.swift */,
 				D775BE991D927DDB00EA6530 /* ViewUtils.swift */,
 			);
 			path = Common;
@@ -427,12 +415,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7252E491D93ACD2009AEA8C /* UIImage+Common.swift in Sources */,
 				D7798C3B1D966818000C7BEE /* WSLoginController.swift in Sources */,
-				D775BE9E1D927EEE00EA6530 /* UIColor+Common.swift in Sources */,
 				D7798C3D1D96682F000C7BEE /* WSMessageController.swift in Sources */,
 				D775BE881D92653E00EA6530 /* ViewController.swift in Sources */,
 				D7798C371D966756000C7BEE /* WSDiscoveryController.swift in Sources */,
+				D795DC921DD066E3002CCFBA /* UIColor+Common.swift in Sources */,
 				D775BE8D1D927A3400EA6530 /* BaseViewController.swift in Sources */,
 				D775BE911D927B3300EA6530 /* BaseService.swift in Sources */,
 				D7798C3F1D966848000C7BEE /* WSProfileController.swift in Sources */,
@@ -442,13 +429,13 @@
 				D775BE851D92653E00EA6530 /* AppDelegate.swift in Sources */,
 				D775BE8F1D927B1D00EA6530 /* BaseModel.swift in Sources */,
 				D775BE9A1D927DDB00EA6530 /* ViewUtils.swift in Sources */,
-				D7798C411D967811000C7BEE /* UIFont+Common.swift in Sources */,
 				D7798C351D966664000C7BEE /* MainTabBarController.swift in Sources */,
+				D795DC931DD066E3002CCFBA /* UIFont+Common.swift in Sources */,
+				D795DC941DD066E3002CCFBA /* UIImage+Common.swift in Sources */,
 				D775BE951D927B8700EA6530 /* BaseWebViewController.swift in Sources */,
 				D775BE971D927BF800EA6530 /* GlobalManager.swift in Sources */,
 				D75CD14B1D951D5B005EA2A2 /* BaseNavButton.swift in Sources */,
 				D775BE931D927B5E00EA6530 /* BaseWebView.swift in Sources */,
-				D73119FD1D93ED4700AE6C99 /* WSImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
